@@ -1,0 +1,66 @@
+@page {
+    size: Letter;
+    margin: 0.5in;
+}
+
+/* Global Settings */
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10pt;
+    line-height: 1.2;
+    color: #000;
+    margin: 0;
+    text-align: justify; /* Requirement: Page Justified Left to Right */
+}
+
+/* Header */
+.header { text-align: center; margin-bottom: 10px; }
+.header p {
+    text-align: center;
+}
+h1 { font-size: 30pt; font-weight: bold; text-transform: uppercase; margin: 0; }
+.header p { font-size: 10pt; font-weight: normal; margin: 0; }
+
+/* Sections */
+h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #000; /* Requirement: Thicker line */
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Experience Styling */
+.job-header { display: flex; justify-content: space-between; font-weight: bold; font-size: 10pt; }
+.job-sub-header { display: flex; justify-content: space-between; margin-bottom: 2px; }
+
+/* Requirement: Job title and dates in Italic */
+.role-italic, .date-italic {
+    font-style: italic !important;
+    font-weight: normal !important;
+    font-size: 10pt;
+}
+
+/* Education Styling */
+.edu-header { display: flex; justify-content: space-between; }
+.edu-sub-header { display: flex; justify-content: space-between; }
+
+/* Requirement: School and Dates in Bold */
+.company-a, .date-a {
+    font-weight: bold !important;
+    font-style: normal !important;
+    font-size: 10pt;
+}
+
+/* Requirement: Degree and GPA in Italic */
+.role-a, .location-a {
+    font-style: italic !important;
+    font-weight: normal !important;
+    font-size: 10pt;
+}
+
+/* Bullets and Spacing */
+ul { padding-left: 18px; margin: 0; }
+li, p { font-size: 10pt; text-align: justify; }
+.skills-list li { list-style: none; margin-left: -18px; }
