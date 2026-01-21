@@ -1,0 +1,85 @@
+{
+  "personal_info": {
+    "name": "ADEYEMI ADENIYI",
+    "contact": "+1 (410) 870-5257 | pauldevops24@gmail.com | Cypress, TX, USA",
+    "linkedin": "linkedin.com/in/paul-niyi24"
+  },
+  "summary": "Senior DevOps Engineer with deep hands-on experience designing secure, scalable AWS infrastructure using Terraform, GitHub Actions, and Go-based deployment patterns.",
+  "skills": {
+    "Cloud Platforms": "AWS, Azure, EC2, RDS, S3, Lambda, ECS, EKS, SSM, VPC, CloudWatch",
+    "Infrastructure as Code": "Terraform, CloudFormation, IaC modules, drift detection",
+    "Containers & Orchestration": "Kubernetes, Docker, EKS, ECS, Helm charts",
+    "CI/CD": "GitHub Actions, GitLab, Jenkins, automated deployment pipelines",
+    "Automation": "Python, Bash, PowerShell, config automation, environment provisioning",
+    "Observability": "CloudWatch, Prometheus, Grafana, ELK, SLIs, SLOs, MTTR reduction",
+    "Security & Compliance": "IAM, KMS, Secrets Manager, access controls, hardening",
+    "Networking": "VPC design, routing, private subnets, load balancers, DNS, security groups",
+    "DevOps Leadership": "Environment modernization, best practices, reliability engineering"
+  },
+  "experience": [
+    {
+      "company": "Platform Science",
+      "role": "Senior DevOps Engineer",
+      "location": "San Diego, CA",
+      "date": "August 2022 – Present",
+      "points": [
+        "Designed and automated AWS infrastructure leveraging Terraform modules to modernize cloud environments and reduce provisioning time",
+        "Implemented GitHub Actions CI and CD pipelines enabling fully automated builds, tests, deployments, and environment promotion",
+        "Managed Kubernetes workloads on EKS including scaling, workloads, security controls, and release management",
+        "Enhanced system reliability with CloudWatch, Prometheus, and ELK improving visibility and reducing operational incidents",
+        "Partnered with engineering teams to drive DevOps best practices improving uptime, performance, and deployment frequency"
+      ]
+    },
+    {
+      "company": "Southwest Airlines",
+      "role": "Senior Platform Engineer",
+      "location": "Dallas, Texas",
+      "date": "August 2019 – July 2022",
+      "points": [
+        "Architected and supported Kubernetes infrastructure and microservices deployments using Terraform and GitOps automation",
+        "Improved CI and CD pipelines enabling consistent deployment automation and rollback workflows across multiple environments",
+        "Optimized AWS environments including VPC design, EKS clusters, load balancing, scaling, and system hardening",
+        "Built monitoring and alerting systems using Prometheus, Grafana, and ELK to ensure reliability and performance at scale",
+        "Automated infrastructure operations through Python and Bash improving developer productivity and reducing operational toil"
+      ]
+    },
+    {
+      "company": "Cognizant",
+      "role": "DevOps Cloud Engineer",
+      "location": "Dallas, TX",
+      "date": "March 2015 – August 2019",
+      "points": [
+        "Developed Terraform and Ansible automation to build, update, and maintain AWS and Azure environments at enterprise scale",
+        "Managed CI and CD pipelines using Jenkins and GitHub improving deployment reliability and reducing manual steps",
+        "Designed and supported container platforms using Kubernetes and Docker including cluster upgrades and workload security",
+        "Enhanced AWS networking with VPCs, subnets, route configuration, SGs, and firewall rules supporting distributed systems"
+      ]
+    },
+    {
+      "company": "Bank of America",
+      "role": "DevOps Engineer",
+      "location": "Charlotte, NC",
+      "date": "February 2010 – March 2015",
+      "points": [
+        "Implemented IaC automation using Terraform and Ansible supporting adoption of AWS cloud environments",
+        "Built and enhanced CI and CD pipelines using Jenkins enabling automated deployments for internal applications",
+        "Managed IAM including Active Directory integration, identity lifecycle automation, and secure access control enforcement",
+        "Supported hybrid cloud operations improving reliability, capacity planning, and disaster recovery readiness"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Rochester Institute of Technology",
+      "degree": "Master's, Industrial Engineering",
+      "date": "August 2005 – February 2008",
+      "gpa": "3.5"
+    },
+    {
+      "school": "Morgan State University",
+      "degree": "Bachelor's, Electrical Engineering",
+      "date": "August 2001 – May 2005",
+      "gpa": "3.8"
+    }
+  ]
+}
