@@ -1,0 +1,7 @@
+openai
+jinja2
+weasyprint
+python-dotenv
+flask
+gspread
+oauth2client

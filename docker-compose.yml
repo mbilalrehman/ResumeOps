@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  # Service 1: The Engine (API)
+  resume-app:
+    build: .
+    container_name: resume_tailor_engine
+    command: python main.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+      - ./output:/app/output
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  # Service 2: The Watcher (Automation)
+  #resume-worker:
+  # build: .
+  #container_name: resume_sheet_watcher
+  # Yeh line Worker script ko chalati hai
+  #command: python resume_worker.py
+  #volumes:
+  # - .:/app
+  #- ./output:/app/output
+  #env_file:
+  # - .env
+  # Yeh Worker ko tab tak start nahi hone dega jab tak Engine start na ho jaye
+  #depends_on:
+  # - resume-app
+  #restart: unless-stopped
