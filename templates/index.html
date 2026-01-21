@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeOps - AI Resume Optimization Engine</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/app.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-robot"></i> <span>ResumeOps</span>
+            </div>
+
+            <nav class="menu">
+                <a href="#" class="active"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Generator</span></a>
+                <a id="autoBtn" onclick="startAutomation()">
+                    <i class="fa-solid fa-robot"></i> Start Automation
+                </a>
+                <a id="stopBtn" class="generate-btn" onclick="stopAutomation()">
+                    <i class="fa-solid fa-robot"></i> Stop Automation
+                </a>
+                <a href="#"><i class="fa-solid fa-user-gear"></i> <span>Profile Config</span></a>
+                <a href="#"><i class="fa-solid fa-clock-rotate-left"></i> <span>History</span></a>
+                <a href="#"><i class="fa-solid fa-terminal"></i> <span>Logs</span></a>
+            </nav>
+
+            <div class="user-profile">
+                <div class="avatar">DA</div>
+                <div class="info">
+                    <span class="name">DevOps Engineer</span>
+                    <span class="status">Online</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>AI Resume Optimization Engine</h1>
+                <div class="model-badge">
+                    <i class="fa-solid fa-microchip"></i> GPT-4o
+                </div>
+            </header>
+
+            <div class="workspace">
+                <div class="input-section">
+                    <div class="section-header">
+                        <i class="fa-solid fa-paste"></i> Target Job Description
+                    </div>
+
+                    <div class="input-container">
+                        <textarea id="jdInput"
+                            placeholder="Paste the Job Description here...&#10;&#10;The system will automatically:&#10;• Extract key skills&#10;• Match with your master profile&#10;• Optimize content with AI"></textarea>
+                    </div>
+
+                    <div class="input-footer">
+                        <div class="word-count">
+                            <i class="fa-solid fa-keyboard"></i> <span id="wordCount">0</span> words
+                        </div>
+                        <div class="hint">
+                            <i class="fa-solid fa-lightbulb"></i> Tip: Include specific technologies
+                        </div>
+                        <button id="clearBtn" class="clear-btn" onclick="resetApp()">
+                            <i class="fa-solid fa-eraser"></i> Clear
+                        </button>
+                    </div>
+
+                    <div class="actions">
+                        <button id="generateBtn" class="generate-btn" onclick="startGeneration()">
+                            <i class="fa-solid fa-bolt"></i> Initialize Tailoring Engine
+                        </button>
+                    </div>
+                </div>
+
+                <div class="console-section">
+                    <div class="console-header">
+                        <div class="console-title">
+                            <i class="fa-solid fa-terminal"></i> System Output
+                        </div>
+                        <div class="console-controls">
+                            <div class="dot red" onclick="clearConsole()"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                    </div>
+
+                    <div id="consoleLogs" class="console-body">
+                        <div class="log-line text-info">
+                            <div class="timestamp">[System]</div>
+                            <i class="fa-solid fa-circle-info"></i>
+                            <div>Ready. Waiting for input...</div>
+                        </div>
+                    </div>
+
+                    <div id="resultCard" class="result-card">
+                        <div class="success-msg">
+                            <i class="fa-solid fa-circle-check"></i> Optimization Complete
+                        </div>
+                        <a id="downloadLink" href="#" target="_blank" class="download-btn">
+                            <i class="fa-solid fa-file-pdf"></i> Download Optimized PDF
+                        </a>
+                        <div style="margin-top: 15px; font-size: 13px; color: var(--text-muted);">
+                            Resume tailored for: <span id="jobTitle">DevOps Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
